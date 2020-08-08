@@ -9,4 +9,16 @@ For the code that is not refactored, the timer says it takes around .8 seconds f
 ![2018 no refactor vba chall](https://github.com/JoelS-Pebbles/stock-analysis/blob/master/2018%20no%20refactor%20vba%20chall.PNG)
 ![2018 refactor vba chall](https://github.com/JoelS-Pebbles/stock-analysis/blob/master/2018%20refactor%20vba%20chall.PNG)
 
-###Code example
+### Code example
+Below is the code for the macro that was not refactored. 
+
+If Cells(j, 1).Value = ticker Then
+        totalvolume = totalvolume + Cells(j, 8).Value
+    End If
+    
+Below is the refactored code that does the same thing as the example above. 
+
+tickervolumes(tickerindex) = tickervolumes(tickerindex) + Cells(j, 8).Value
+
+I belive the refactored code is faster at proccessing the macro because it has less arguments and variables in the code, like the example provided above. 
+
