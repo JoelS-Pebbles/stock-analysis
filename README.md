@@ -20,5 +20,8 @@ Below is the refactored code that does the same thing as the example above.
 
 tickervolumes(tickerindex) = tickervolumes(tickerindex) + Cells(j, 8).Value
 
-I belive the refactored code is faster at proccessing the macro because it has less arguments and variables in the code, like the example provided above. 
+Both of the code examples are finding the volume for the current ticker. I belive the refactored code is faster at proccessing the macro because it has less arguments and variables in the code, like the example provided above. 
 
+
+## Summary
+The refactored code was much faster in proccessing the macro. This is especially useful if Steve wanted to add some more stocks to analyze. A disadvantage to refacoring code is you could make a mistake and forget how you got the code working in the first place. Or you might present new bugs that could mess up the code. It was easy to tell how much faster the code ran thanks to the timer that we put in both macros. But with refactoring code, I moved some things around and it too several tries before I got the lines of code where they were supposed to be. 
